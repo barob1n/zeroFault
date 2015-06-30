@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <malloc.h>
-//#include "segyIO_class.h"
 #include "defns.h"
 #include "segy.h"
 
@@ -25,7 +24,7 @@ int trHdrWordLen[]={4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4,
 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
 2, 2};
 */
-static void ibm_to_float(int from[], int to[], int n, int endian)
+void ibm_to_float(int from[], int to[], int n, int endian)
 /***********************************************************************
 ibm_to_float - convert between 32 bit IBM and IEEE floating numbers
 ************************************************************************
