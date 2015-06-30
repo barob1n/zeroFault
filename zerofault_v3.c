@@ -10,8 +10,6 @@
 //#include "segyIO_class.h"
 
 
-
-
 int main(int argc, char **argv)
 {
 FILE *fin;		/* Input file				*/
@@ -130,11 +128,7 @@ struct stat st;
 	fgets(buff,80,stdin);
 	sscanf(buff,"%d",&choice);
 	if(choice == -1){ return 0;} 
-   
-
-
-
-
+  
 
    if (fin != NULL ) {
 	  
