@@ -3,6 +3,7 @@ void headerAscii(unsigned char *s1, unsigned char *s2, int n);
 int  segyWriteHeader(FILE *f, char *txt_hdr, bhed *bh, int endian);
 int  segyWriteTrace(FILE *f, segy *tr_hdr, float *tr_data,
 	int ns, int endian);
+void ibm_to_float(int from[], int to[], int n, int endian);
 void swap4bytes(char *b);
 void swap2bytes(char *b);
 int  getHeaderSwap(char *p1, int byte, int count, int endian);
